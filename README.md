@@ -1,2 +1,1 @@
-# colony-game
-rimworld clone
+a tile based game
