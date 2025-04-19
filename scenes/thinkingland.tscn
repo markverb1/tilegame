@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=4 uid="uid://bb58keqpmhsd4"]
+
+[ext_resource type="TileSet" uid="uid://rsjlyxjhxekb" path="res://resources/tileset_new.tres" id="1_nfakq"]
+[ext_resource type="Script" uid="uid://tehrl06nnuer" path="res://scripts/thinkingland.gd" id="1_oirhs"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_oirhs")
+
+[node name="Main" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAEAAEAAAABAAAAAAAEAAIAAAAAAAEAAAAEAAMAAAAAAAEAAAAEAAQAAAAAAAEAAAAEAAUAAAABAAIAAAAFAAEAAAACAAMAAAAGAAEAAAACAAMAAAAHAAEAAAACAAMAAAAIAAEAAAACAAMAAAAJAAEAAAACAAMAAAAKAAEAAAADAAAAAAAKAAIAAAAAAAEAAAAKAAMAAAAAAAEAAAAKAAQAAAAAAAEAAAAKAAUAAAADAAIAAAAJAAUAAAACAAMAAAAIAAUAAAACAAMAAAAHAAUAAAACAAMAAAAGAAUAAAACAAMAAAAFAAUAAAACAAMAAAA=")
+tile_set = ExtResource("1_nfakq")
+
+[connection signal="changed" from="Main" to="." method="_on_tilemap_changed"]
