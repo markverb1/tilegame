@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2i26evfrujgv"
+path="res://.godot/imported/TENSOR C.WAV-59dbcb1d529b08333296f2b305fbcc1f.sample"
+
+[deps]
+
+source_file="res://source/fmod/Assets/Ja2 Music/TENSOR C.WAV"
+dest_files=["res://.godot/imported/TENSOR C.WAV-59dbcb1d529b08333296f2b305fbcc1f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

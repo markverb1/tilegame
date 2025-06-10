@@ -1,0 +1,11 @@
+{ad0e064f-beaf-47ca-a0cc-46a011d5885a} bank:/GUI
+{27850a6d-c211-4445-939d-96c07f52a3b3} bank:/Master
+{bf982ab9-b36a-0807-15d4-1c3e8ea1a52b} bank:/Master.strings
+{7afba638-0073-4b87-90c9-e5e7e7afc520} bank:/Music
+{a8b79bb8-5e7f-414b-9bc4-c73213915e01} bank:/SFX
+{f6a4d6f3-29a9-48a3-8c81-fc30f1b71a48} bus:/
+{a8194747-d114-46ee-8fa1-3490e920e158} bus:/Reverb
+{0c9c9dfe-cb14-43e0-be63-d9d4c237c952} event:/GUI/Notification
+{d9f4a8a0-0df9-4864-9a3d-6cfb2081aa39} event:/GUI/Type
+{f8c68cbe-589c-4d69-8f06-8307b028fe45} event:/Music/A51
+{23e9dbb2-388c-4627-a7d5-097b143f689d} parameter:/Phase

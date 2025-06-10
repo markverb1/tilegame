@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{61c89b6d-51c1-4628-ad22-0c154cf0a6e9}">
+		<property name="assetPath">
+			<value>Ja2 Music/DEATH.WAV</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>16.433877551020409</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c118a38f-ec94-4592-bba0-df986bf36ccf}</destination>
+		</relationship>
+	</object>
+</objects>

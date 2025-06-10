@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f801c1dc-4310-43cf-8a94-d03adf328103}">
+		<property name="assetPath">
+			<value>Ja2 Music/TRIUMPH.WAV</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>15.238049886621315</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c118a38f-ec94-4592-bba0-df986bf36ccf}</destination>
+		</relationship>
+	</object>
+</objects>

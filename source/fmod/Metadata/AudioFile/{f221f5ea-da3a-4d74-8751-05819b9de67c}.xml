@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f221f5ea-da3a-4d74-8751-05819b9de67c}">
+		<property name="assetPath">
+			<value>canteen.WAV</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.6289795918367349</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c118a38f-ec94-4592-bba0-df986bf36ccf}</destination>
+		</relationship>
+	</object>
+</objects>

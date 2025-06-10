@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnn6juu2yd0xl"
+path="res://.godot/imported/MARIMBAD 2.WAV-fca3ddac2dd56b1d35d430105315ee7c.sample"
+
+[deps]
+
+source_file="res://source/fmod/Assets/Ja2 Music/MARIMBAD 2.WAV"
+dest_files=["res://.godot/imported/MARIMBAD 2.WAV-fca3ddac2dd56b1d35d430105315ee7c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
