@@ -11,9 +11,19 @@ config_version=5
 [application]
 
 config/name="ja4a1"
-run/main_scene="uid://bb58keqpmhsd4"
+run/main_scene="uid://dklun6k51575d"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+util="*res://scripts/util.gd"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/scale_mode="integer"
 
 [rendering]
 
