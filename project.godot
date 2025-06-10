@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="ja4a1"
+config/name="Tilegame"
 run/main_scene="uid://dklun6k51575d"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 util="*res://scripts/util.gd"
+manager="*res://scripts/manager.gd"
 
 [display]
 
