@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EcsResource" load_steps=4 format=3 uid="uid://dn6rx3nxdmolu"]
+
+[ext_resource type="Script" uid="uid://cpo3iscjf8sr8" path="res://scripts/components/HelloComponent.cs" id="1_iq3t6"]
+[ext_resource type="Script" uid="uid://bkectr6a5fit5" path="res://scripts/classes/EcsResource.cs" id="1_ytc5p"]
+
+[sub_resource type="Resource" id="Resource_u3f35"]
+script = ExtResource("1_iq3t6")
+metadata/_custom_type_script = "uid://cpo3iscjf8sr8"
+
+[resource]
+script = ExtResource("1_ytc5p")
+fullName = "Nothing"
+nickName = "None"
+components = Array[Object]([SubResource("Resource_u3f35")])
+systems = PackedStringArray()
+metadata/_custom_type_script = "uid://bkectr6a5fit5"
