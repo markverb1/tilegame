@@ -14,9 +14,10 @@ public partial class EcsEntity : Node
     public EcsEntity(EcsResource entityResource, bool autoCreateSystems = false)
     {
         EntityResource = entityResource;
+        if (autoCreateSystems) AutoCreateSystems();
     }
 
-    public bool CreateSystems()
+    public bool AutoCreateSystems()
     {
         if (EntityResource == null) return false;
         foreach (var system in EntityResource.Systems)
@@ -25,15 +26,21 @@ public partial class EcsEntity : Node
             if (systemType != null)
             {
                 var newSystem = Activator.CreateInstance(systemType) as EcsSystem;
-                if (newSystem == null) break;
-                newSystem.SetName(system);
-                AddChild(newSystem);
+                AddSystem(newSystem);
             }
             else
             {
                 GD.PrintErr($"Cannot create system of type {system}");
             }
         }
+        return true;
+    }
+
+    public bool AddSystem(EcsSystem newSystem)
+    {
+        if (newSystem == null) return false;
+        newSystem.SetName(newSystem.GetType().Name);
+        AddChild(newSystem);
         return true;
     }
 }
