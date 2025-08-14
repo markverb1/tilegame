@@ -1,13 +1,18 @@
 ﻿using System;
 using Godot;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TileSharp;
 
+[Icon("uid://ggb7uwkqatyl")]
 public partial class EcsEntity : Node
 {
-    protected EcsResource EntityResource { get; }
+    public EcsResource EntityResource { get; protected set; }
+    private static uint _uid = 0;
+    public uint Id = ++_uid;
 
-    public EcsEntity()
+
+    private EcsEntity()
     {
     }
 
@@ -25,7 +30,7 @@ public partial class EcsEntity : Node
             Type systemType = Type.GetType($"TileSharp.Scripts.Systems.{system}");
             if (systemType != null)
             {
-                var newSystem = Activator.CreateInstance(systemType) as EcsSystem;
+                var newSystem = Activator.CreateInstance(systemType, this) as EcsSystem;
                 AddSystem(newSystem);
             }
             else
@@ -33,6 +38,7 @@ public partial class EcsEntity : Node
                 GD.PrintErr($"Cannot create system of type {system}");
             }
         }
+
         return true;
     }
 

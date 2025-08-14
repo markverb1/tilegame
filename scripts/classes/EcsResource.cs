@@ -3,6 +3,7 @@
 namespace TileSharp;
 
 [GlobalClass]
+[Icon("uid://crtmqa418ve3r")]
 public partial class EcsResource : Resource
 {
     [Export] public EcsComponent[] Components;
