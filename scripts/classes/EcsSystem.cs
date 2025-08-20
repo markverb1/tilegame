@@ -48,16 +48,16 @@ public abstract partial class EcsSystem : Node
 
         foreach (var system in queriedSystem.RequiredSystems)
         {
+            visited.Add(system);
             if (visited.Contains(system))
                 throw new Exception($"Circular dependency detected in system {nameof(system)}");
 
-            visited.Add(system);
-
-            if (SearchSystemDependencies(system, true, visited)) return true;
+            if (SearchSystemDependencies(system, false, visited)) return true;
         }
 
         return false;
     }
+
 
     public sealed override void _Ready()
     {
