@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp53jpqam642q"]
+
+[ext_resource type="Texture2D" uid="uid://cpd8qihkna5eg" path="res://assets/editor_icons/crystal_ball.svg" id="1_lhmkt"]
+
+[node name="Tile2d" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lhmkt")
+centered = false
+
+[node name="Label" type="Label" parent="."]
+offset_top = 32.0
+offset_right = 91.0
+offset_bottom = 55.0
+text = "Hello World from HelloComponent"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true

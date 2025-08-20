@@ -4,6 +4,7 @@ using Godot;
 namespace TileSharp;
 
 [Icon("uid://ggb7uwkqatyl")]
+[GlobalClass]
 public partial class EcsEntity : Node
 {
     private static uint _uid = 0;
