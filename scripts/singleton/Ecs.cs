@@ -1,5 +1,4 @@
 ﻿using Godot;
-using System;
 
 namespace TileSharp;
 
@@ -12,9 +11,10 @@ public partial class Ecs : Node
     {
         Instance = this;
     }
+
     public EcsEntity AddEntity(EcsResource resource)
     {
-        EcsEntity newEntity = new EcsEntity(resource);
+        var newEntity = new EcsEntity(resource, true);
         newEntity.SetName(resource.NickName + "_" + newEntity.Id.ToString());
         AddChild(newEntity);
         return newEntity;

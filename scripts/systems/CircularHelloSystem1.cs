@@ -4,11 +4,11 @@ using Godot;
 namespace TileSharp;
 
 [GlobalClass]
-public partial class HelloSystem : EcsSystem
+public partial class CircularHelloSystem1 : EcsSystem
 {
     private HelloComponent _helloComponent;
-    public override Type[] RequiredComponents { get; } = [typeof(HelloComponent)];
-    public override Type[] RequiredSystems { get; } = [];
+    public override Type[] RequiredComponents { get; } = [];
+    public override Type[] RequiredSystems { get; } = [typeof(CircularHelloSystem1)];
     public override PackedScene Scene { get; } = GD.Load<PackedScene>("uid://bp53jpqam642q");
 
     protected override void _ReadySystem()

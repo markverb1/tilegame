@@ -11,8 +11,8 @@ metadata/_custom_type_script = "uid://cpo3iscjf8sr8"
 
 [resource]
 script = ExtResource("1_ytc5p")
-Components = Array[Object]([SubResource("Resource_iq3t6")])
+Components = Array[Object]([SubResource("Resource_iq3t6"), null])
 FullName = "Hello World"
 NickName = "Hello"
-Systems = PackedStringArray("HelloSystem")
+Systems = PackedStringArray("HelloSystem", "CircularHelloSystem1", "CircularHelloSystem2")
 metadata/_custom_type_script = "uid://bkectr6a5fit5"
