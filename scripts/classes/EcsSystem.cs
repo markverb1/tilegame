@@ -24,7 +24,7 @@ public abstract partial class EcsSystem : Node
     public abstract PackedScene Scene { get; }
     public bool Initialised { get; protected set; } = false;
 
-    protected abstract void _ReadySystem();
+    protected abstract bool _ReadySystem();
     protected abstract void _ProcessSystem(double delta);
 
     public void SetPaused(bool pause)
@@ -78,12 +78,12 @@ public abstract partial class EcsSystem : Node
                 break;
             }
 
-        _ReadySystem();
+        Initialised = _ReadySystem();
     }
 
     public sealed override void _Process(double delta)
     {
-        if (Paused) return;
+        if (Paused && !Initialised) return;
         _ProcessSystem(delta);
     }
 }

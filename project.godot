@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="TileSharp"
-run/main_scene="res://node_2d.tscn"
+run/main_scene="uid://bukdubren8mup"
 config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
+boot_splash/fullsize=false
 boot_splash/image="uid://c0ddivoxqrfnl"
 config/icon="res://icon.svg"
 boot_splash/minimum_display_time=5
@@ -21,11 +22,17 @@ boot_splash/minimum_display_time=5
 
 ECS="*res://scripts/singleton/Ecs.cs"
 
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+
 [dotnet]
 
 project/assembly_name="TileSharp"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=3
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

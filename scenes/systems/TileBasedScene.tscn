@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cqmg3dam2mkyb"]
+
+[node name="TileBasedScene" type="Node2D"]

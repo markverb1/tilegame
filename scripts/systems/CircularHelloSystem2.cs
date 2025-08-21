@@ -11,9 +11,10 @@ public partial class CircularHelloSystem2 : EcsSystem
     public override Type[] RequiredSystems { get; } = []; //[typeof(CircularHelloSystem1)];
     public override PackedScene Scene { get; } = GD.Load<PackedScene>("uid://bp53jpqam642q");
 
-    protected override void _ReadySystem()
+    protected override bool _ReadySystem()
     {
         GD.Print("Hello Second Circle!");
+        return true;
     }
 
     protected override void _ProcessSystem(double delta)

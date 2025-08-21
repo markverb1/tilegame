@@ -11,13 +11,14 @@ public partial class HelloSystem : EcsSystem
     public override Type[] RequiredSystems { get; } = [];
     public override PackedScene Scene { get; } = GD.Load<PackedScene>("uid://bp53jpqam642q");
 
-    protected override void _ReadySystem()
+    protected override bool _ReadySystem()
     {
         _helloComponent = myEntity.GetComponent<HelloComponent>(true);
         for (var I = 0;
              I < _helloComponent.TimesToPrint;
              ++I)
             GD.Print(_helloComponent.ThingToPrint);
+        return true;
     }
 
     protected override void _ProcessSystem(double delta)
