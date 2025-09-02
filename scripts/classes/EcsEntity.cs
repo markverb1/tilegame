@@ -8,7 +8,6 @@ namespace TileSharp;
 public partial class EcsEntity : Node
 {
     private static uint _uid = 0;
-    public uint Id = ++_uid;
 
 
     private EcsEntity()
@@ -22,8 +21,8 @@ public partial class EcsEntity : Node
         if (autoCreateSystems) AutoCreateSystems();
     }
 
+    public uint Id { get; private set; } = ++_uid;
     public EcsResource EntityResource { get; protected set; }
-    public EcsContainer EcsContainer { get; protected set; }
 
     public bool AutoCreateSystems()
     {
@@ -124,7 +123,6 @@ public partial class EcsEntity : Node
 
         return null;
     }
-
 
     public bool SystemInitialised(Type systemType, bool throwErrorIfNotFound = false)
     {

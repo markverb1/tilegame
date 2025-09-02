@@ -23,9 +23,14 @@ public abstract partial class EcsSystem : Node
     public abstract Type[] RequiredSystems { get; }
     public abstract PackedScene Scene { get; }
     public bool Initialised { get; protected set; } = false;
+    public bool ContainerInitialized { get; protected set; } = false;
+    public Node SystemContainer { get; protected set; }
 
     protected abstract bool _ReadySystem();
     protected abstract void _ProcessSystem(double delta);
+    protected abstract bool _ReadySystemContainer();
+    protected abstract void _ProcessSystemContainer(double delta);
+
 
     public void SetPaused(bool pause)
     {
@@ -59,7 +64,7 @@ public abstract partial class EcsSystem : Node
     }
 
 
-    public sealed override void _Ready()
+    public sealed override async void _Ready()
     {
         if (GetParent() is EcsEntity)
         {
@@ -75,11 +80,25 @@ public abstract partial class EcsSystem : Node
             if (!myEntity.SystemInitialised(system))
             {
                 Paused = true;
+                GD.PrintErr($"System {GetType().Name} requires uninitialised system {system.Name}. Aborting.");
                 break;
             }
 
         Initialised = _ReadySystem();
+        // await WaitForContainer();
+        // SystemContainer = new Node();
+        // SystemContainer.Name = this.GetType().Name;
+        // ContainerInitialized = _ReadySystemContainer();
     }
+
+    // private async System.Threading.Tasks.Task WaitForContainer()
+    // {
+    //     while (myEntity.Container == null)
+    //     {
+    //         // Wait 1 frame before checking again
+    //         await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
+    //     }
+    // }
 
     public sealed override void _Process(double delta)
     {

@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeeb2c21-ff24-4179-be2e-5e1f4fd363f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/components/TileHelloComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/systems/TileBasedSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TileSharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TileSharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TileSharp.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TileSharp.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/test.tres" beforeDir="false" afterPath="$PROJECT_DIR$/resources/test.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/Viewport.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/Viewport.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/systems/TileBasedScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/systems/TileBasedScene.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/classes/EcsContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/classes/EcsContainer.cs.uid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/classes/EcsEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/classes/EcsEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/classes/EcsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/classes/EcsSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/components/TileBasedComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/TileBasedComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/singleton/Ecs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/singleton/Ecs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem1.cs.uid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/CircularHelloSystem2.cs.uid" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/systems/HelloSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/systems/HelloSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/TileBasedSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/TileBasedSystem.cs.uid" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +48,23 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/ILViewer/839fe6c0fe3d4276a9875280cbd90b209400/9d/eacbd405/02000009pdb6.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/ILViewer/9a8ceafbb8a348bba532ea7e9fb647a39400/9e/8f06e7e3/02000007pdb4.il" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/60e7b22380df80ef6fefe43138047f49ec6eff4b25c12b42ce3d6ed5aac/MethodInvokerCommon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/ad1d58b8dd22123dfae3f2cf5d8b199992465c9c344d032f93a826d8e5539ff/RuntimeType.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/df73a4db74df89d59655c5fb6326406f47fbfa9af1fa81518fe0a07c49d34133/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/SourceGeneratedDocuments/C5E1AB35D959572057BA5020/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/TileSharp.Ecs_ScriptSignals.generated.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Main.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/classes/EcsComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/scripts/classes/EcsContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/classes/EcsEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/classes/EcsResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/classes/EcsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/components/HelloComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/components/TileBasedComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/components/TileHelloComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/scripts/normal/Viewport.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/singleton/Ecs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/scripts/systems/HelloSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/scripts/systems/TileBasedSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -69,6 +80,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Executable.Editor.executor": "Debug",
     ".NET Executable.Player.executor": "Debug",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Attach to Process.10016:PowerToys.executor": "Debug",
@@ -82,7 +94,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.XPath",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -152,7 +164,13 @@
       <workItem from="1755324755373" duration="8282000" />
       <workItem from="1755601425593" duration="11406000" />
       <workItem from="1755696389918" duration="4056000" />
-      <workItem from="1755771205071" duration="5856000" />
+      <workItem from="1755771205071" duration="6789000" />
+      <workItem from="1755855177974" duration="3699000" />
+      <workItem from="1756709136719" duration="6534000" />
+      <workItem from="1756730220728" duration="2026000" />
+      <workItem from="1756732499610" duration="622000" />
+      <workItem from="1756733169888" duration="3153000" />
+      <workItem from="1756815131972" duration="8054000" />
     </task>
     <task id="LOCAL-00001" summary="add circular dependency checking and start implementing Ecscontainer">
       <option name="closed" value="true" />
@@ -178,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755697688664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Jesus Dean">
+      <option name="closed" value="true" />
+      <created>1755782362633</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755782362633</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +246,8 @@
     <MESSAGE value="add circular dependency checking and start implementing Ecscontainer" />
     <MESSAGE value="add unversioned files" />
     <MESSAGE value="fix the circular dependency detector" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix the circular dependency detector" />
+    <MESSAGE value="Jesus Dean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jesus Dean" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

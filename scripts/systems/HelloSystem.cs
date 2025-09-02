@@ -24,4 +24,14 @@ public partial class HelloSystem : EcsSystem
     protected override void _ProcessSystem(double delta)
     {
     }
+
+    protected override bool _ReadySystemContainer()
+    {
+        GD.Print("Hello Components");
+        return true;
+    }
+
+    protected override void _ProcessSystemContainer(double delta)
+    {
+    }
 }
